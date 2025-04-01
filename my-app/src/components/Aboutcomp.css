@@ -1,0 +1,65 @@
+.aboutacontainer {
+  padding-top: 5%;
+}
+.aboutAbout {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 2rem;
+  padding-left: 10%;
+  color: white;
+}
+.aboutwelcome {
+  font-family: monospace;
+  font-size: 1rem;
+  padding-left: 10%;
+  padding-top: 1.1%;
+  font-weight: bolder;
+  color: white;
+}
+.aboutAt {
+  font-family: monospace;
+  font-size: 1rem;
+  padding-left: 10%;
+  padding-top: 1%;
+  font-weight: bold;
+  width: 80%;
+  color: white;
+}
+.aboutWel {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 1rem;
+  padding-left: 10%;
+  padding-top: 1%;
+  width: 90%;
+  color: white;
+}
+
+.Aboutvideo {
+  width: 90%;
+  margin-left: 5%;
+}
+
+.aboutacontainer {
+  display: flex;
+  flex-direction: row; /* Positions children horizontally */
+  width: 100%;
+  align-items: stretch; /* Ensures both divs align properly */
+}
+
+/* Styling the child divs */
+.aboutaleft,
+.aboutright {
+  flex: 1; /* Each child takes up equal space */
+  width: 50%; /* 50% width for larger screens */
+  height: 100%; /* Full height of the container */
+}
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+  .aboutaleft,
+  .aboutright {
+    width: 100%; /* 100% width on small screens */
+  }
+  .aboutacontainer {
+    display: block;
+  }
+}

@@ -1,0 +1,122 @@
+.container {
+  display: flex;
+  width: 100%;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.left,
+.right {
+  width: 50%;
+  padding: 20px;
+}
+
+.left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left img {
+  width: 48%;
+  height: auto;
+  border: 1px solid #ccc;
+  background-color: white;
+}
+
+.right {
+  background-color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.right h1 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 2rem;
+  padding-bottom: 8%;
+}
+
+.secondpara {
+  font-family: monospace;
+  font-size: 1rem;
+  font-weight: bolder;
+  padding-bottom: 2%;
+  width: 80%;
+}
+
+.firstpara {
+  font-family: monospace;
+  font-size: 1.2rem;
+  padding-bottom: 2%;
+  width: 80%;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+  }
+
+  .left {
+    flex-direction: column;
+  }
+
+  .left img {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+/* From Uiverse.io by e-coders */
+.butt {
+  appearance: none;
+  background-color: transparent;
+  border: 0.2em solid #1a1a1a;
+  border-radius: 0.9375em;
+  box-sizing: border-box;
+  color: #3b3b3b;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 3.75em;
+  min-width: 0;
+  width: 30%;
+  outline: none;
+  padding: 1em 2.3em;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  will-change: transform;
+}
+
+.butt:disabled {
+  pointer-events: none;
+}
+
+.butt:hover {
+  color: #fff;
+  background-color: #1a1a1a;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.butt:active {
+  box-shadow: none;
+  transform: translateY(0);
+}

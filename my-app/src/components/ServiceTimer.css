@@ -1,0 +1,86 @@
+/* Ensure that styles only apply to elements inside the service_timer component */
+.service_timer {
+    text-align: center;
+  }
+  
+  .service_timer .spacer {
+    height: 20px; /* Spacer to allow scrolling */
+  }
+  
+  .service_timer .counter-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .service_timer .counter {
+    padding: 30px 20px;
+    width: 150px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .service_timer .counter:hover {
+    transform: scale(1.05);
+  }
+  
+  .service_timer .counter h1 {
+    font-size: 3rem;
+    color: #ffffff;
+    margin: 0;
+    font-weight: 700;
+  }
+  
+  .service_timer .counter p {
+    font-size: 1rem;
+    color: #ffffff;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  /* Optional: Add animation effect for the counters */
+  .service_timer .counter h1 {
+    transition: all 1s ease-in-out;
+  }
+  
+  .service_timer .counter p {
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0.6;
+  }
+  
+  .service_timer .counter:hover p {
+    opacity: 1;
+  }
+  
+
+
+
+/* Responsive design for mobile screens */
+@media (max-width: 768px) {
+  .service_timer .counter h1 {
+    font-size: 2rem; /* Adjust font size for smaller screens */
+    color: black;
+  }
+
+  .service_timer .counter p {
+    font-size: 0.9rem; /* Adjust font size for smaller screens */
+    margin-top: 8px; /* Reduce spacing */
+    color: black;
+  }
+}
+
+@media (max-width: 480px) {
+  .service_timer .counter h1 {
+    font-size: 1.8rem;
+    color: black; /* Further adjust font size for very small screens */
+  }
+
+  .service_timer .counter p {
+    font-size: 0.8rem; /* Further adjust font size */
+    margin-top: 6px; /* Reduce spacing further */
+    color: black;
+  }
+}
